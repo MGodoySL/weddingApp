@@ -4,9 +4,9 @@ import { useState } from "react";
 import { pol, ptBr } from "../../../../languageTexts.js";
 
 export const Main = () => {
-    const [language, setlanguage] = useState<string | null>(null);
+    const [language, setlanguage] = useState(null);
 
-    const handleLanguage = (value: any) => {
+    const handleLanguage = (value) => {
         value === "Português" ? setlanguage(ptBr) : setlanguage(pol);
     };
     return (
